@@ -147,7 +147,7 @@ hr {
 	display: table;
 	width: 100%;
 	padding: 0;
-	background: url(../img/intro-bg.jpg) no-repeat right bottom;
+	background: url(../img/intro-bg.jpg) no-repeat left center;
 	background-color: #e5e5e5;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -193,7 +193,7 @@ header .intro-text {
 	background: #f6f6f6;
 }
 #about .about-text {
-	margin-left: 10px;
+	margin-left: 50px;;
 }
 #about .about-text h3 {
 	font-weight: 400;
@@ -206,6 +206,10 @@ header .intro-text {
 	margin: 30px 0;
 	line-height: 22px;
 }
+#about img{
+	border-radius: 50%;
+	
+}
 /* Services Section */
 #services {
 	padding: 120px 0;
@@ -214,7 +218,11 @@ header .intro-text {
 	color: #C54DAA;
 	text-transform: uppercase;
 }
-
+#services ul li{
+	font-size: 20px;
+	list-style: disc;
+	list-style-position: inside;
+}
 
 /* #services i.fa {
 	font-size: 38px;
@@ -298,6 +306,16 @@ ol.type li a:hover {
 	-o-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 }
+
+.portfolio-item .wrapper{
+	text-align: center;
+	padding-top: 10px;
+}
+.portfolio-item .wrapper a{
+	font-size: 20px;
+	display: block;
+}
+
 .portfolio-item:hover {
 	-webkit-transform: scale(1.1);
 	-moz-transform: scale(1.1);
@@ -306,7 +324,7 @@ ol.type li a:hover {
 	transform: scale(1.1);
 }
 .portfolio-item .hover-bg {
-	height: 195px;
+	height: 200px;
 	overflow: hidden;
 	position: relative;
 }
@@ -357,88 +375,7 @@ ol.type li a:hover {
 	padding: 5px;
 	color: #E87E04;
 }
-/* Achivements Section */
-#achievements {
-	background: url(../img/achievements-bg.jpg) no-repeat center bottom fixed;
-	background-color: #e5e5e5;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-}
-#achievements .overlay {
-	padding: 120px 0;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c54daa+0,1b71d6+100&0.6+0,0.6+100 */
-	background: -moz-linear-gradient(left, rgba(197,77,170,0.6) 0%, rgba(27,113,214,0.6) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, rgba(197,77,170,0.6) 0%, rgba(27,113,214,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, rgba(197,77,170,0.6) 0%, rgba(27,113,214,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99c54daa', endColorstr='#991b71d6', GradientType=1 ); /* IE6-9 */
-}
-#achievements h2 {
-	color: #fff;
-}
-.achievement-box h4 {
-	color: #fff;
-	font-size: 16px;
-	font-weight: 400;
-	margin-left: 5px;
-	text-transform: uppercase;
-}
-.achievement-box span.count {
-	font-size: 52px;
-	font-weight: 600;
-	display: block;
-	color: #fff;
-	padding: 0;
-	margin: 0;
-}
-/* Testimonials Section */
-#testimonials {
-	padding: 120px 0 80px 0;
-	background: #F6F6F6;
-}
-#testimonials i.fa {
-	color: #8e9599;
-	font-size: 36px;
-}
-#testimonial {
-	padding: 30px 0;
-}
-#testimonial .item {
-	display: block;
-	width: 100%;
-	height: auto;
-}
-#testimonial img {
-	width: 140px;
-	height: 140px;
-	border-radius: 50%;
-}
-#testimonial .item p {
-	margin: 30px 0;
-}
-.owl-theme .owl-controls .owl-page span {
-	display: block;
-	width: 20px;
-	height: 6px;
-	margin: 5px 7px;
-	filter: Alpha(Opacity=1);
-	opacity: 1;
-	border-radius: 0;
-	background: #fff;
-	transition: all 0.5s;
-	border: 1px solid #ccc;
-}
-.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
-	filter: Alpha(Opacity=100);
-	opacity: 1;
-	background: #C54DAA;
-	border: 1px solid #C54DAA;
-}
-.owl-theme .owl-controls .owl-page.active span {
-	background: #C54DAA;
-	border: 1px solid #C54DAA;
-}
+
 /* Contact Section */
 #contact {
 	padding: 120px 0 60px 0;
@@ -536,9 +473,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c54daa', end
 
 @media (max-width: 1024px) {
 #about img {
+	max-width: 70%;
 	float: left;
 	margin-bottom: 20px;
 }
 }
 
-
+@media(min-width:768px){
+	#about{
+		text-align: center;
+	}
+	#services .detail{
+		text-align: center;
+	}
+	#services .detail a{
+		margin-bottom: 20px;
+	}
+	
+}
