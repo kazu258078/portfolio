@@ -214,7 +214,9 @@ header .intro-text {
 	color: #C54DAA;
 	text-transform: uppercase;
 }
-#services i.fa {
+
+
+/* #services i.fa {
 	font-size: 38px;
 	margin-bottom: 20px;
 	transition: all 0.5s;
@@ -224,7 +226,9 @@ header .intro-text {
 	padding: 30px 0;
 	background: #C54DAA;
 	border-radius: 50%;
-}
+} */
+
+
 /* Portfolio Section */
 #portfolio {
 	padding: 120px 0;
@@ -536,3 +540,5 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c54daa', end
 	margin-bottom: 20px;
 }
 }
+
+
