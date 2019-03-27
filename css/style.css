@@ -224,6 +224,7 @@ header .intro-text {
 	list-style-position: inside;
 }
 
+
 /* #services i.fa {
 	font-size: 38px;
 	margin-bottom: 20px;
@@ -283,6 +284,7 @@ ol.type li a:hover {
 	margin-right: -1px;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+	
 }
 .isotope {
 	-webkit-backface-visibility: hidden;
@@ -471,23 +473,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c54daa', end
 	color: #fff;
 }
 
-@media (max-width: 1024px) {
-#about img {
-	max-width: 70%;
-	float: left;
-	margin-bottom: 20px;
-}
-}
 
-@media(min-width:768px){
+
+@media(max-width:768px){
 	#about{
 		text-align: center;
+	}
+	#about img {
+		max-width: 70%;
+		float: left;
+		margin-bottom: 20px;
+		margin-left: 111px;
 	}
 	#services .detail{
 		text-align: center;
 	}
 	#services .detail a{
 		margin-bottom: 20px;
+	}
+	#services ul{
+		width: 30%;
+		text-align: left;
+		margin: 20px auto;
+	}
+	#portfolio .isotope-item{
+		left: 20%!important;
 	}
 	
 }
